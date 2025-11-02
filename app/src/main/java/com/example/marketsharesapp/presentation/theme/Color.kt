@@ -1,4 +1,4 @@
-package com.example.marketsharesapp.ui.theme
+package com.example.marketsharesapp.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 

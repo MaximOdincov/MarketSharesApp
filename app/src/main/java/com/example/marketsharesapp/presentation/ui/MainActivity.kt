@@ -1,4 +1,4 @@
-package com.example.marketsharesapp
+package com.example.marketsharesapp.presentation.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.marketsharesapp.ui.theme.MarketSharesAppTheme
+import com.example.marketsharesapp.presentation.theme.MarketSharesAppTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
