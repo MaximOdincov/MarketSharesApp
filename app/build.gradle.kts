@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("com.google.dagger.hilt.android")
+    kotlin("kapt")
 }
 
 android {
@@ -50,7 +52,10 @@ dependencies {
     implementation(libs.androidx.compose.material3)
     implementation(libs.retrofit)
     implementation(libs.okHttp)
-    runtimeOnly(libs.hilt)
+    implementation(libs.hilt.android)
+    implementation("com.squareup.okhttp3:logging-interceptor:5.0.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    kapt(libs.hilt.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
