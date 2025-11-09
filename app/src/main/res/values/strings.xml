@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MarketSharesApp</string>
+    <string name="timeframe_5_minutes">5M</string>
+    <string name="timeframe_15_minutes">15M</string>
+    <string name="timeframe_30_minutes">30M</string>
+    <string name="timeframe_1_hour">1H</string>
 </resources>

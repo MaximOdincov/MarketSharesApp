@@ -2,14 +2,14 @@ package com.example.marketsharesapp.data.model
 
 import android.icu.util.Calendar
 import com.google.gson.annotations.SerializedName
+import com.squareup.moshi.Json
 import kotlinx.serialization.Serializable
 import java.util.Date
 
-@Serializable
 data class CandleActionDto(
-    @SerializedName("o") val  open: Float,
-    @SerializedName("c") val  close: Float,
-    @SerializedName("l") val  low: Float,
-    @SerializedName("h") val  high: Float,
-    @SerializedName("t") val  time: Long
+    @Json(name = "o") val  open: Double,
+    @Json(name = "c") val  close: Double,
+    @Json(name = "l") val  low: Double,
+    @Json(name = "h") val  high: Double,
+    @Json(name = "t") val  time: Long
 )

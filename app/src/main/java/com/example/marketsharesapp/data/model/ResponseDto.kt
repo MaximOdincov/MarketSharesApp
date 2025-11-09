@@ -1,9 +1,9 @@
 package com.example.marketsharesapp.data.model
 
 import com.google.gson.annotations.SerializedName
+import com.squareup.moshi.Json
 import kotlinx.serialization.Serializable
 
-@Serializable
 data class ResponseDto(
-    @SerializedName("results") val candles: List<CandleActionDto>
+    @Json(name = "results") val candles: List<CandleActionDto>
 )
